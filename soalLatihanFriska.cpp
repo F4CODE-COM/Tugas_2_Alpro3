@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream>//header i/o c++
 using namespace std;
 
 int main() {
@@ -12,7 +12,7 @@ int main() {
     cout << "Tujuan (1: Dalam Kota, 2: Luar Kota): ";
     cin >> tujuan;
 
-    if (ekspedisi == 1) 
+    if (ekspedisi == 1) //kondisi untuk ekspedisi JNE.
         biaya = (tujuan == 1) ? 10000 : 20000;
         total = biaya * berat;
         if (berat > 10) {
@@ -38,6 +38,6 @@ int main() {
         }
     }
 
-    cout << "Total Biaya: Rp" << total << endl;
+    cout << "Total Biaya: Rp" << total << endl;//total biaya ekspedisi
     return 0;
 }
